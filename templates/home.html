@@ -49,7 +49,12 @@
       ABC Company is a leading provider of innovative solutions, specializing in delivering high-quality products and services to meet the ever-evolving needs of its customers. With a commitment to excellence, ABC Company blends cutting-edge technology with a customer-centric approach, ensuring satisfaction at every step. From bespoke services to top-notch customer support, the company strives to create long-term value for its clients. Its dedicated team of professionals is driven by a passion for innovation and continuous improvement, making ABC Company a trusted partner for businesses across industries.
     </p>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-    <p>Hi</p>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+      
+    </div>
     <div class="text-center">
       <button class = "bnt btn-primary btn-lg">Contact Us</button>
     </div>  
